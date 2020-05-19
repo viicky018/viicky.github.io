@@ -1,0 +1,90 @@
+/* establecer tamaño con método border-box*/
+html{
+    box-sizing: border box;
+}
+*, * before,* after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: Thistle;
+    border: 2px solid gray;
+    border-radius: 16px;
+    margin-left: auto;
+    max-width: 1024px;
+    min-width: 256px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: sans-serif;
+    margin-right: auto;
+}
+/* Añadir un fondo bonito*/
+html{
+    background: radial-gradient(circle, skyblue 50%, lightcyan 50%, skyblue);
+    background-size: 8px 8px ;
+
+}
+/* cabezera */
+header p{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+} 
+header h1{
+    font-style: 16px;
+    text-align: right;
+}
+/*biografias*/
+section {
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    min-height: 320px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+/*barra lateral*/
+aside {
+
+}
+/*pie*/
+footer p.derechos {
+    float: left;
+    margin-top: 0px;
+}
+footer p.contacto {
+    text-align: right;
+}
+/*imágenes pequeñas*/
+img.pequeña {
+    float: left;
+    height: 200px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+}
+/* imágenes medianas: hasta el 50% del ancho del elemento continente, 360px de máximo */
+img.mediana{
+    max-width: 360px;
+    width: 50%;
+}
+@media all and (min-width: 900px) {
+article {
+    float: left;
+    padding-left: 12px;
+    width: 66%;
+}
+aside {
+    float: right;
+    padding-left: 12px;
+    width: 30%;
+}
+footer {
+    clear: both;
+}
+}
+
+
+
+
